@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+    <title>Decodificador</title>
+</head>
+
+<body>
+    <header>
+        <a href="https://alura.com.br" target="_blank"><img class="logo" src="assets/alura.png" alt="Logo alura"></a>
+    </header>
+
+    <main class="area__principal">
+
+        <section class="area__intuitiva">
+            <div class="area__intuitiva__textarea">
+                <textarea class="area__intuitiva__textarea__input" id="textInput" placeholder="Digite seu texto" type="text"></textarea>
+            </div>
+
+            <div class="area__intuitiva_alerta">
+                <img src="assets/icon.png" alt="Icone de Exclamacao">
+                <p>Por favor, apenas letras minúsculas e sem acento.</p>
+            </div>
+
+            <div class="area__intuitiva__botoes">
+                <button onclick="botaoCriptografar()" class="buttom__A buttom">Criptografar</button>
+                <button onclick="botaoDescriptografar()" class="buttom__B buttom">Descriptografar</button>
+            </div>
+
+        </section>
+
+        <div class="area">
+            <div class="area__informacoes">
+                <div id="area__informacoes__nenhumamsg" class="area_nenhumamsg">
+                    <img class="img" src="assets/meninalupa.png" alt="Imagem personalizada">
+                    <div class="area__informacoes__info">
+                        <h2>Nenhuma mensagem encontrada</h2>
+                        <p>Digite um texto que você deseja criptografar ou descriptografar</p>
+                    </div>
+                </div>
+
+                <div class="resultado__msg invisivel" id="resultado">
+                    <textarea disabled class="resultado__cript textResult"></textarea>
+                    <button onclick="botaoCopiar()" id="copy" class="buttom botao__copiar">Copiar</button>
+                </div>
+
+            </div>
+        </div>
+
+    </main>
+
+</body>
+
+</html>
